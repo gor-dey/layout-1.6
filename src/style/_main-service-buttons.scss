@@ -1,0 +1,40 @@
+.services__buttons {
+  display: flex;
+  overflow: scroll;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  gap: 0.625rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
+.services__button {
+  flex-shrink: 0;
+  background: none;
+  border: 2px solid $back-ground-main;
+  border-radius: 6px;
+  margin: 0;
+  padding: 0.625rem;
+  width: auto;
+  height: 2.5rem;
+  font-size: 1rem;
+  color: $button-hover;
+}
+
+.services__button:hover {
+  border: 2px solid $services__button-hover-border-color;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.services__title {
+  display: flex;
+  gap: 0.75rem;
+}
+
+@media (min-width: 1120px) {
+  .services__buttons {
+    overflow: auto;
+    flex-wrap: wrap;
+  }
+}

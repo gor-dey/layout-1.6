@@ -1,0 +1,22 @@
+body {
+  background-color: $back-ground-main;
+  padding: 0;
+  margin: 0 auto;
+  font-family: "TT Lakes";
+  max-width: 1440px;
+}
+
+.main-caption {
+  margin-left: 1rem;
+}
+
+// blue vertical element near the "Услуги и сервисы"
+.main-caption::before {
+  position: relative;
+  left: -1rem;
+  // уточнить, сколько процентов надо задавать скругление
+  border-radius: 0 25% 25% 0;
+  background: $blue-element-near-the-h1;
+  height: 2.5rem;
+  width: 0.25rem;
+}

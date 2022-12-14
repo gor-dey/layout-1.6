@@ -1,0 +1,95 @@
+@media (max-width: 767px) {
+  .repair-of-brands--prices {
+    display: none;
+  }
+
+  .repair-of-brands--prices {
+    max-width: 100%;
+    // height: 20rem; /* временно  */
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+
+    overflow: hidden;
+    background: #f8f8f8;
+    background-size: 100%;
+  }
+
+  .image-slider__image--prices {
+    max-width: 45rem;
+    height: 12.5rem;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 0.375rem;
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .image-swiper-any-type--text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .image-swiper-any-type--text--x2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .image-swiper-any-type--text--x3 {
+  }
+
+  .image-slider__image--prices :first-of-type {
+    align-self: flex-start;
+  }
+
+  .image-slider__image--prices :last-of-type {
+    align-self: flex-end;
+  }
+
+  .swiper-pagination--prices {
+    position: relative;
+
+    padding-top: 0;
+  }
+  /* пагинация */
+  .swiper-pagination-bullet--prices {
+    background-color: #b5b6bc;
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .swiper--prices {
+    min-width: 0;
+    max-width: 100%;
+    margin-top: 0;
+    padding: 1rem;
+  }
+
+  .repair-of-brands__text--prices {
+    padding: 1rem;
+    display: block;
+    height: 80px;
+    box-sizing: border-box;
+    font-family: "TT Lakes";
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: $button-hover;
+    background: rgb(248, 248, 248);
+    background: linear-gradient(
+      90deg,
+      rgba(248, 248, 248, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    border-top: 1px solid $border-top-slider-etc;
+    padding-bottom: 2rem;
+  }
+}

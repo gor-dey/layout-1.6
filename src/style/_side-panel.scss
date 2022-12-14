@@ -1,0 +1,127 @@
+.id-of-side-panel {
+  width: 100vw;
+  min-width: 320px;
+  height: 100vh;
+  max-height: 1024px;
+  margin: 0;
+  // box-shadow: 2rem 0 2rem #f2f2f2;
+  padding: 0rem 1rem 2rem 1rem;
+  box-sizing: border-box;
+
+  position: absolute;
+  top: 0rem;
+  left: 0;
+  background-color: #fff;
+  // transform: translateX(-100%);
+  z-index: 1;
+  transform: translateX(-100%);
+  transition: all 0.6s ease 0s;
+}
+
+.id-of-side-panel._open {
+  transform: translateX(0);
+}
+
+.side-panel__button {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.side-panel__button--text {
+  font-weight: medium;
+  background: none;
+  border: none;
+  width: auto;
+  height: 40px;
+  margin-right: auto;
+  position: relative;
+  left: -2rem;
+  padding-left: 2rem;
+}
+
+.side-panel__button--text:hover {
+  color: $button-hover;
+  background: url("img/service-left.svg") no-repeat 1rem;
+}
+
+.side-panel__button:hover {
+  color: $button-hover;
+}
+
+.side-panel {
+  display: grid;
+  grid-template-rows: 10% 1fr 20%;
+}
+
+.side-panel-buttons--top {
+  height: 5.5rem;
+  display: grid;
+  grid-template-columns: 40px 100px 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.side-panel__search {
+  justify-self: end;
+}
+
+.side-panel-buttons--middle {
+  height: 70%;
+  display: grid;
+  grid-template-rows: repeat(7, 3rem);
+}
+
+.side-panel-buttons--bottom {
+  height: 20%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 40px) 1fr;
+  grid-template-rows: repeat(4, 3rem);
+}
+
+.side-panel__mail {
+  text-decoration: none;
+  color: #000;
+  grid-area: 2 / 1 / 2 / 6;
+}
+
+.side-panel__number {
+  grid-area: 2 / 1 / 2 / 6;
+}
+
+.side-panel__lang--ru {
+  grid-area: 3 / 1 / 3 / 2;
+}
+
+.side-panel__lang--en {
+  grid-area: 3 / 2 / 3 / 3;
+}
+
+.side-panel__lang--cn {
+  grid-area: 3 / 3 / 3 / 4;
+}
+
+@media (min-width: 768px) {
+  .id-of-side-panel {
+    max-width: 20rem;
+  }
+}
+
+@media (min-width: 1120px) {
+  .id-of-side-panel {
+    transition: none;
+    transform: translateX(0);
+    position: relative;
+    top: -5.5rem;
+    float: left;
+  }
+  .side-panel__cross {
+    visibility: hidden;
+  }
+  .side-panel__logo {
+    order: -1;
+  }
+}

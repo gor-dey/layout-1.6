@@ -1,0 +1,80 @@
+@media (min-width: 768px) {
+  .repair-of-brands--prices {
+    display: none;
+  }
+
+  .repair-of-brands--tablet--praces {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    box-sizing: border-box;
+    // overflow: hidden; /* text-overflow */
+
+    // background: $back-ground-main;
+    // background-size: 100%;
+  }
+
+  .repair-of-brands__text--tablet--praces {
+    padding: 1rem;
+    display: block;
+    height: 80px;
+    box-sizing: border-box;
+    font-family: "TT Lakes";
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: $button-hover;
+    background: rgb(248, 248, 248);
+    background: linear-gradient(
+      90deg,
+      rgba(248, 248, 248, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    border-top: 1px solid $border-top-slider-etc;
+  }
+  .repair-of-brands__--tablet--praces--head-list {
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 50% 15% 15% auto;
+    color: #7e7e82;
+  }
+  .repair-of-brands--tablet--praces--container {
+    position: relative;
+    left: 1rem;
+
+    background-color: #fff;
+    padding: 1rem;
+    padding-top: 2rem;
+    box-sizing: border-box;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    width: auto;
+    min-width: 0;
+    height: 20.25rem;
+
+    display: grid;
+    grid-template-columns: 50% 15% 15% auto;
+  }
+
+  .repair-of-brands--tablet--praces--flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .repair-of-brands--tablet--praces--elements {
+    border-bottom: #eaeaea 2px solid;
+    padding-bottom: 1rem;
+  }
+
+  .repair-of-brands--tablet--praces--flex :last-child {
+    border: none;
+  }
+
+  .repair-of-brands--tablet--praces--img {
+    padding: 1rem;
+  }
+}
