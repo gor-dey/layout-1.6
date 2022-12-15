@@ -4,6 +4,7 @@
 main {
   margin: 0;
   padding: 0;
+  // padding-left: 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -20,14 +21,17 @@ main._blur {
     transform: translate(0, -6rem);
   }
 
-  // .the-most-important-class {
-  //   display: flex;
-  //   flex-direction: row;
-  // }
-  // .the-most-important-class:first-child {
+  // MY ATTEMPT OF SOLUTION OF BIG-WHITE-BAR UNDER THE SIDE-PANNEL PROBLEM
+  // .id-of-side-panel::after {
+  //   content: "";
+  //   display: block;
+  //   width: 19rem;
+  //   height: 100%;
   //   background-color: #fff;
-  // }
-  // .the-most-important-class:last-child {
-  //   padding: 5rem;
+  //   position: sticky;
+  //   left: 0;
+  //   top: 0;
+  //   transform: translateY(-60%);
+  //   z-index: -1;
   // }
 }

@@ -47,13 +47,12 @@
   }
 
   .image-slider__image {
-    max-width: 45rem;
     height: 4.5rem;
     background: #ffffff;
     border: 1px solid #eaeaea;
     border-radius: 0.375rem;
     box-sizing: border-box;
-    max-width: 100%;
+    width: 100%;
     min-width: 0;
     display: flex;
     justify-content: space-between;
@@ -68,6 +67,7 @@
   .swiper-pagination {
     position: relative;
     padding-top: 0;
+    padding: 1rem;
   }
   /* пагинация */
   .swiper-pagination-bullet {

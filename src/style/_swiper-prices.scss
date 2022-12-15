@@ -1,5 +1,5 @@
 @media (max-width: 767px) {
-  .repair-of-brands--prices {
+  .repair-of-brands--tablet--praces {
     display: none;
   }
 
@@ -24,40 +24,72 @@
     box-sizing: border-box;
     max-width: 100%;
     min-width: 0;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 1rem;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(6, auto);
   }
 
-  .image-swiper-any-type--text {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  .image-slider__image--prices :first-child {
+    grid-column: 1/3;
+    grid-row: 1/2;
   }
 
-  .image-swiper-any-type--text--x2 {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
+  .image-slider__image--prices :nth-child(2) {
+    grid-column: 1/3;
+    grid-row: 2/3;
   }
 
-  .image-swiper-any-type--text--x3 {
+  .image-slider__image--prices :nth-child(3) {
+    grid-column: 1/3;
+    grid-row: 3/4;
   }
 
-  .image-slider__image--prices :first-of-type {
-    align-self: flex-start;
+  .image-slider__image--prices :nth-child(4) {
+    grid-column: 1/3;
+    grid-row: 4/5;
   }
 
-  .image-slider__image--prices :last-of-type {
-    align-self: flex-end;
+  .image-slider__image--prices :nth-child(5) {
+    grid-column: 1/3;
+    grid-row: 5/6;
+  }
+
+  .image-slider__image--prices :nth-child(6) {
+    grid-column: 1/3;
+    grid-row: 6/7;
+  }
+
+  .image-slider__image--prices :last-child {
+    grid-column: 2/3;
+    grid-row: 6/7;
+    margin-left: auto;
+  }
+
+  .image-slider__image--prices :nth-child(2n-1) {
+    color: #7e7e82;
+    transform: translateY(0.2rem);
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .image-slider__image--prices :nth-child(2n) {
+    color: #1b1c21;
+    transform: translateY(-0.2rem);
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
   }
 
   .swiper-pagination--prices {
+    display: flex;
+    justify-content: center;
     position: relative;
-
-    padding-top: 0;
+    padding: 1rem;
   }
+
   /* пагинация */
   .swiper-pagination-bullet--prices {
     background-color: #b5b6bc;
