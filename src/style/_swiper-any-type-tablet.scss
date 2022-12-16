@@ -29,6 +29,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem 0 1rem;
+    font-weight: 500;
   }
 
   .image-slider__slide--tablet--any-types {
@@ -52,12 +53,17 @@
     align-self: start;
   }
 
+  .read-more--text--tablet--any-types {
+    font-weight: 500;
+  }
+
   .js-img__read-more--tablet--any-types {
     transform: rotate(180deg);
   }
 
   .read-more--text--no--tablet--any-types {
     display: none;
+    font-weight: 500;
   }
 
   .js-read-more--text--tablet--any-types {

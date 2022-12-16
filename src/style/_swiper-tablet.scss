@@ -88,8 +88,13 @@
     transform: rotate(180deg);
   }
 
+  .read-more--text--tablet {
+    font-weight: 500;
+  }
+
   .read-more--text--no--tablet {
     display: none;
+    font-weight: 500;
   }
 
   .js-read-more--text--tablet {

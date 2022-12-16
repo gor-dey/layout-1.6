@@ -27,8 +27,8 @@
         <div class="nav nav__tablet nav_call">
           <img src="./img/nav__call.svg" alt="call" />
         </div>
-        <div class="nav nav__tablet nav_">
-          <img src="./img/nav__chat.svg" alt="call" />
+        <div class="nav nav__tablet nav__chat">
+          <img src="./img/nav__chat.svg" alt="chat" />
         </div>
         <div class="nav nav__tablet nav_man">
           <img src="./img/nav-man.svg" alt="man" />
@@ -122,10 +122,78 @@
         </div>
       </aside>
       <!-- SIDE PANEL END -->
+
+      <!-- FEEDBACK PANEL START -->
+      <aside class="feedback">
+        <div class="feedback__container">
+          <div class="feedback__element__cross">
+            <img src="./img/nav-cross.svg" alt="cross" />
+          </div>
+          <div class="feedback__element__header">
+            <div class="feedback__element__header-text">
+              <img src="./img/service-left.svg" />
+              <h1>Обратная связь</h1>
+            </div>
+          </div>
+          <div class="feedback__element__input">
+            <input type="text" id="name" placeholder="  Имя" />
+          </div>
+          <div class="feedback__element__input">
+            <input type="tel" id="phone" placeholder="  Телефон" />
+          </div>
+          <div class="feedback__element__input">
+            <input type="email" id="email" placeholder="  Электронная почта" />
+          </div>
+          <div class="feedback__element__input">
+            <textarea rows="10" type="text" id="message" placeholder="  Сообщение" /></textarea>
+          </div>
+          <div class="feedback__element__pryivacy">
+            <p>
+              Нажимая “отправить”, вы даете согласие на <span class="feedback--pink-text">обработку персональных
+              данных</span> и соглашаетесь с нашей <span class="feedback--pink-text">политикой конфиденциальности</span>
+            </p>
+          </div>
+          <div class="feedback__element__button-send">
+            <img src="./img/send.svg" alt="send" class="" />
+          </div>
+        </div>
+      </aside>
+      <!-- FEEDBACK PANEL END -->
+
+      <!-- ORDER THE CALL PANEL START -->
+      <aside class="order-the-call">
+        <div class="order-the-call__container">
+          <div class="order-the-call__element__cross">
+            <img src="./img/nav-cross.svg" alt="cross" />
+          </div>
+          <div class="order-the-call__element__header">
+            <div class="order-the-call__element__header-text">
+              <img src="./img/service-left.svg" />
+              <h1>Заказать звонок</h1>
+            </div>
+          </div>
+          
+          <div class="order-the-call__element__input">
+            <input type="tel" id="phone" placeholder="  Телефон" />
+          </div>
+          
+          <div class="order-the-call__element__pryivacy">
+            <p>
+              Нажимая “отправить”, вы даете согласие на <span class="order-the-call--pink-text">обработку персональных
+              данных</span> и соглашаетесь с нашей <span class="order-the-call--pink-text">политикой конфиденциальности</span>
+            </p>
+          </div>
+          <div class="order-the-call__element__button-send">
+            <img src="./img/send.svg" alt="send" class="" />
+          </div>
+        </div>
+      </aside>
+      <!-- ORDER THE CALL PANEL END -->
+
       <main>
         <div class="services">
           <div class="services__title">
-            <img src="img\service-left.svg" />
+            <img src="./img/service-left.svg" />
             <h1>Услуги и сервисы</h1>
           </div>
           <div class="services__buttons">
@@ -165,7 +233,12 @@
                 laudantium iste quod et amet ipsa hic, qui dolorum? Quisquam,
                 labore? Sed accusantium.
               </p>
-              <button class="main-text-img__text--button">Читать далее</button>
+              
+              <button class="main-text-img__text--button">
+                <img class="main-text-img__text--button--img" src="./img/read-more.svg" />
+                <span class="main-text-img__text--button--text"> &nbsp Показать всё</span>
+                <span class="main-text-img__text--button--text--no"> &nbsp Скрыть</span>
+              </button>
             </div>
             <img
               class="main-text-img__picture"
@@ -757,6 +830,36 @@
           </div>
           <!-- SSWIPER TABLET Prices END -->
         </div>
+        <!-- ADDITIONAL INFORMATION START -->
+        <div class="additional-information">
+          <p class="additional-information__text">
+            Все цены указаны с учетом НДС. Стоимость ремонта указана на
+            единичную услугу. Для получения коммерческого предложения на
+            постоянное обслуживание, оставьте заявку.
+          </p>
+          <div class="additional-information__link">
+            <p class="additional-information__link--text">
+              Получить коммерческое предложение &nbsp
+              <img
+                class="additional-information__link--img"
+                src="./img/add-information-link.svg"
+                alt="link"
+              />
+            </p>
+          </div>
+        </div>
+        <!-- ADDITIONAL INFORMATION END -->
+
+        <footer class="footer">
+          <div class="footer--text">
+            © 2019 CPS Разработано командой Apesong
+          </div>
+          <div class="footer--text">Политика конфиденциальности</div>
+          <div class="footer--text">
+            Информация, размещенная на данной странице, не является публичной
+            офертой
+          </div>
+        </footer>
       </main>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
