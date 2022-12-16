@@ -6,6 +6,7 @@ import "./index.scss";
 
 // SPECIAC FUNCTION GETCLASS - START
 const get = (a) => document.querySelector(a);
+const getAll = (a) => document.querySelectorAll(a);
 
 // SPECIAC FUNCTION GETCLASS - END
 
@@ -16,7 +17,6 @@ const navSidePanel = get(".id-of-side-panel");
 const main = get("main");
 const header = get("header");
 
-// const blur = document.getElementsByClassName("_blur");
 navSidePanelMenuOpen.onclick = () => {
   navSidePanel.classList.add("_open");
   main.classList.add("_blur");
@@ -33,12 +33,22 @@ main.onclick = () => {
   main.classList.remove("_blur");
   header.classList.remove("_blur");
 };
-blur.onclick = () => {
-  navSidePanel.classList.remove("_open");
-  main.classList.remove("_blur");
-  header.classList.remove("_blur");
-};
-// SIDE PANNEL ANIMATION END
+
+// // const _blur
+// const blur = document.getElementsByClassName("_blur");
+// // const blur = get("_blur");
+// function navSidePanelRemoveFromBlur() {
+//   navSidePanel.classList.remove("_open");
+//   main.classList.remove("_blur");
+//   header.classList.remove("_blur");
+// }
+
+// console.log(blur);
+
+// blur.array.forEach((i) => {
+//   i.addEaventListener("click", navSidePanelRemoveFromBlur);
+// });
+// // SIDE PANNEL ANIMATION END
 
 // BUTTON 'READ MORE' START
 const showMoreText = get(".main-text-img__text--text");
