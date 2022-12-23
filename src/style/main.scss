@@ -20,19 +20,16 @@ main._blur {
     transform: translate(0, -6rem);
   }
 
-  // // MY ATTEMPT OF SOLUTION OF BIG-WHITE-BAR UNDER THE SIDE-PANNEL PROBLEM
-  // .id-of-side-panel::after {
-  //   content: "";
-  //   display: block;
-  //   width: 19rem;
-  //   height: 100%;
-  //   background-color: #fff;
-  //   position: sticky;
-  //   left: 0;
-  //   top: 0;
-  //   transform: translateY(-60%);
-  //   z-index: -1;
-  // }
+  .the-most-important-class {
+    background: rgb(248, 248, 248);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 20rem,
+      rgba(255, 255, 255, 1) 20rem,
+      rgba(248, 248, 248, 1) 20rem,
+      rgba(248, 248, 248, 1) 100%
+    );
+  }
 }
 
 body {

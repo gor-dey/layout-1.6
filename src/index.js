@@ -7,6 +7,7 @@ import "./index.scss";
 // SPECIAC FUNCTION GETCLASS - START
 const get = (a) => document.querySelector(a);
 const getAll = (a) => document.querySelectorAll(a);
+const getClass = (a) => document.getElementsByClassName(a);
 
 // SPECIAC FUNCTION GETCLASS - END
 
@@ -16,39 +17,70 @@ const navSidePanelCrossOut = get(".side-panel__cross");
 const navSidePanel = get(".id-of-side-panel");
 const main = get("main");
 const header = get("header");
+// const _blur
+const blurCollection = getClass("_blur");
 
+function navSidePanelRemoveFromBlur(event) {
+  if (event.currentTarget !== navSidePanel) {
+    if (blurCollection.length == 2) {
+      navSidePanel.classList.remove("_open");
+      main.classList.remove("_blur");
+      header.classList.remove("_blur");
+    }
+  } else return false;
+}
 navSidePanelMenuOpen.onclick = () => {
   navSidePanel.classList.add("_open");
   main.classList.add("_blur");
   header.classList.add("_blur");
+  event.stopPropagation();
+  document.addEventListener("click", navSidePanelRemoveFromBlur);
 };
+
 navSidePanelCrossOut.onclick = () => {
   navSidePanel.classList.remove("_open");
   main.classList.remove("_blur");
   header.classList.remove("_blur");
 };
 //  __WHY DOES NOT WORK? ONLY CLICK TO 'MAIN' WORKS
-main.onclick = () => {
-  navSidePanel.classList.remove("_open");
-  main.classList.remove("_blur");
-  header.classList.remove("_blur");
-};
 
-// // const _blur
-// const blur = document.getElementsByClassName("_blur");
-// // const blur = get("_blur");
-// function navSidePanelRemoveFromBlur() {
+// const blur = get("_blur");
+
+// const blur = [...blurCollection];
+// Array.from(blurCollection);
+// Array.prototype.slice.call(blurCollection, 0);
+
+// let blur = [];
+// for (let i in blurCollection) blur[i] = blurCollection[i];
+
+// const blur = ["_blur", "_blur"];
+
+// const navSidePanelRemoveFromBlur = () => {
 //   navSidePanel.classList.remove("_open");
 //   main.classList.remove("_blur");
 //   header.classList.remove("_blur");
-// }
+// };
 
 // console.log(blur);
 
-// blur.array.forEach((i) => {
+// blur.array.
+// blur.forEach((i) => {
 //   i.addEaventListener("click", navSidePanelRemoveFromBlur);
 // });
-// // SIDE PANNEL ANIMATION END
+
+// if (blurCollection.classNane.contains("_blur") {
+
+// * translating from Object to Array
+// const ololo = { x: 1, y: 2, z: 3 };
+// Object.values(ololo).forEach((value) => {
+//   console.log(value);
+// });
+
+// Object.values(navSidePanelRemoveFromBlur).forEach((value) => {
+//   console.log(value);
+// });
+
+// SIDE PANNEL ANIMATION END
 
 // BUTTON 'READ MORE' START
 const showMoreText = get(".main-text-img__text--text");

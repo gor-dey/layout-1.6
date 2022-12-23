@@ -69,7 +69,7 @@ header._blur {
     background-color: $back-ground-main;
   }
 
-  .nav:after {
+  .nav::after {
     content: "";
     display: block;
     position: absolute;
