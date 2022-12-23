@@ -22,6 +22,7 @@ const blurCollection = getClass("_blur");
 
 function navSidePanelRemoveFromBlur(event) {
   if (event.currentTarget !== navSidePanel) {
+    console.log(event.currentTarget);
     if (blurCollection.length == 2) {
       navSidePanel.classList.remove("_open");
       main.classList.remove("_blur");
@@ -34,10 +35,16 @@ navSidePanelMenuOpen.onclick = () => {
   main.classList.add("_blur");
   header.classList.add("_blur");
   event.stopPropagation();
-  document.addEventListener("click", navSidePanelRemoveFromBlur);
+  header.addEventListener("click", navSidePanelRemoveFromBlur);
 };
 
 navSidePanelCrossOut.onclick = () => {
+  navSidePanel.classList.remove("_open");
+  main.classList.remove("_blur");
+  header.classList.remove("_blur");
+};
+
+main.onclick = () => {
   navSidePanel.classList.remove("_open");
   main.classList.remove("_blur");
   header.classList.remove("_blur");
